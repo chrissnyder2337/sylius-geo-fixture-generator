@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use ChrisSnyder2337\SyliusGeoFixtureGenerator\GenerateGeoFixturesCommand;
+use Symfony\Component\Console\Application;
+
+$app = new Application('Generate Sylius Geo Fixture', 'v0.0.1');
+
+$app -> add(new GenerateGeoFixturesCommand());
+
+$app -> run();

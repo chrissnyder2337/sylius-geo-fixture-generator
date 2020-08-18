@@ -1,0 +1,25 @@
+{
+    "name": "chrissnyder2337/sylius-geo-fixture-generator",
+    "description": "Generates yaml for countries and provinces by leveraging CommerceGuys\\Addressing for use within Sylius fixtures.",
+    "type": "library",
+    "keywords": ["symfony", "symfony-command", "sylius"],
+    "autoload": {
+        "psr-4": {
+            "ChrisSnyder2337\\SyliusGeoFixtureGenerator\\": "src/"
+        },
+        "classmap": ["src"]
+    },
+    "require": {
+        "php": "^7.4",
+        "commerceguys/addressing": "^1.0",
+        "symfony/yaml": "^5.1",
+        "symfony/console": "^5.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Snyder",
+            "email": "chris@chrissnyder.org"
+        }
+    ]
+}
